@@ -3,7 +3,6 @@ package com.habittracker.app.data.repository
 import com.google.firebase.auth.FirebaseAuth
 import com.habittracker.app.data.local.CompletionDao
 import com.habittracker.app.data.local.HabitDao
-import com.habittracker.app.data.local.Mappers
 import com.habittracker.app.data.local.UserProfileDao
 import com.habittracker.app.data.local.entities.CompletionEntity
 import com.habittracker.app.data.local.entities.UserProfileEntity

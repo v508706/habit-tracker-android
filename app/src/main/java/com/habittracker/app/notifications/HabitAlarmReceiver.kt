@@ -8,7 +8,6 @@ import android.content.Intent
 import androidx.core.app.NotificationCompat
 import com.habittracker.app.Constants
 import com.habittracker.app.MainActivity
-import com.habittracker.app.R
 
 class HabitAlarmReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {

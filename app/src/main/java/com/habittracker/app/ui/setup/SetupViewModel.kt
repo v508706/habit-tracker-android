@@ -4,9 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.messaging.FirebaseMessaging
-import com.habittracker.app.Constants
 import com.habittracker.app.data.repository.HabitRepository
-import com.habittracker.app.data.remote.FirestoreDataSource
 import com.habittracker.app.domain.model.Habit
 import com.habittracker.app.domain.model.UserProfile
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -40,7 +38,6 @@ data class SetupUiState(
 @HiltViewModel
 class SetupViewModel @Inject constructor(
     private val repository: HabitRepository,
-    private val firestoreDataSource: FirestoreDataSource,
     private val auth: FirebaseAuth
 ) : ViewModel() {
 

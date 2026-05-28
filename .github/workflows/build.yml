@@ -23,15 +23,13 @@ jobs:
           cache: gradle
 
       - name: Write google-services.json
-        # Decodes the secret you stored in GitHub → Settings → Secrets
-        # For a compile-only check you can use the stub (see SETUP.md)
+        # If the secret exists, overwrite the stub with the real file.
+        # If not, the committed stub is used as-is (compile check passes).
         env:
           GOOGLE_SERVICES_JSON: ${{ secrets.GOOGLE_SERVICES_JSON }}
         run: |
           if [ -n "$GOOGLE_SERVICES_JSON" ]; then
             echo "$GOOGLE_SERVICES_JSON" > app/google-services.json
-          else
-            cp app/google-services.json app/google-services.json   # use stub
           fi
 
       - name: Make gradlew executable

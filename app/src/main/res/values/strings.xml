@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Habit Tracker</string>
+    <string name="notification_channel_id">habit_reminders</string>
+    <string name="notification_channel_name">Habit Reminders</string>
+</resources>

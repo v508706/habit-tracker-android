@@ -1,0 +1,18 @@
+# Build outputs
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# APKs / bundles
+*.apk
+*.aab
+
+# Sensitive — replace with real file, never commit real credentials
+# app/google-services.json  <- keep the stub committed; override via CI secret
